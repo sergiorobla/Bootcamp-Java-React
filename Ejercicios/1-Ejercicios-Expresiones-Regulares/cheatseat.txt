@@ -1,0 +1,38 @@
+2. SINGLE CHARACTER
+
+2.1 La estrella de Kleene *
+- /* ➜ Seleccionamos cualquier carácter. (INCLUIDO EL SALTO DE LÍNEA \n)
+- \n ➜ Seleccionamos todos los saltos de líneas.
+- \s ➜ Seleccionamos todos los espacios.
+
+2.2 [set] Contenido en el grupo
+- [carácter/es] ➜ Buscará cualquier carácter incluido en los [] independientemente
+de si es consecutivo o no.
+
+2.3 [^set] No contenido en el grupo
+- [^carácter/es] ➜ Buscará cualquier carácter que NO esté incluido dentro de los []
+independientemente de si es consecutivo o no.
+
+2.4 [set] [^set] Definiendo conjuntos / rangos
+- [a-z] ➜ Nos permite definir un rango específico dentro del patrón.
+- [a-zñ] ➜ Añadimos un carácter al rango específico dentro del patrón.
+- [a-zñA-ZÑ] ➜ Añadimos un rango con mayúsculas y minúsculas añadiendo el carácter también
+en caseSensitive.
+- [0-9] ➜ Lo utilizamos para buscar rangos numéricos. (LOS NÚMEROS PUEDEN SER PERSONALIZADOS)
+- [^a-zñA-ZÑ] ➜ Si queremos identificar carácteres que son numéricos dentro de un documento
+también podemos invertir el rango,
+- [^0-9] ➜ De la misma manera si queremos seleccionar solo carácteres de texto.
+- [À-ÿ] ➜ Seleccionamos los caracteres especiales (acentuados, dieresis, eñes...)
+que no son utilizados en el lenguaje inglés.
+
+2.5 Uso del meta carácter joker, .* & \char
+- . ➜ Selecciona todos los caracteres y cualquier carácter, de forma similar a "un comodín" 
+¡ A EXCEPCIÓN DE LOS SALTOS DE LÍNEA !
+- carácter/es . carácter/es ➜ Entre dos caracteres es el uso mas habitual, ya que se usa
+como carácter comodín con la intención de hacer mach sobre varios elementos a la vez.
+- ..carácter/es ➜ Puedes también añadir varios puntos a la vez.
+- carácter/es.* ➜ Selecciona una parte determinada en un texto para posteriormente
+reemplazar dicho contenido.
+- \*, \, \., \\ ... ➜ Existen determinados caracteres que debido a que tienen algún 
+significado dentro del lenguaje de las regex no se pueden buscar solos, para eso 
+añadiremos \ antes del carácter.

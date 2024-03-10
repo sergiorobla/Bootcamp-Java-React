@@ -1,0 +1,23 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  display: inline-block;
+  color: red;
+}
+
+h1:hover {
+  color: yellowgreen;
+}
+
+p {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: solid 2px red;
+}
+
+::selection {
+  background-color: blueviolet;
+  color: yellow;
+}

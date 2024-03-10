@@ -1,0 +1,113 @@
+EXPRESIONES REGULARESo.o
+
+Las Expresiones regulares se pueden llamar regEx o regExp, viene del inglés REGular EXPressions.
+
+Son una serie de simbolos (expresiones o patrones) que nos permiten definir patrones de busqueda en cadenas de texto o codigo.
+
+Basicamente, es un lenguaje para manipular o realizar busquedas sobre archivos de textos o simplemente sobre textos sin la necesidad
+de que estos estén contenidos en el interior de un fichero.
+
+Existen diferentes motores para trabajar con regex, los principales son:
+
+.NET (C#, VB.NET...)
+PCRE (C, PHP, R...)
+Perl (basado en el PCRE2 engine)
+Python
+Ruby 2+
+
+Nos sirven para muchas funciones:
+
+Realizar validaciones: tanto en HTML, Java, C#, Python, JavaScript...
+
+Realizar búsquedas: dentro de un documento.
+
+Sustituir contenido de forma masiva: evitando tener que cambiar una por una y perder mucho tiempo.
+
+Incluso, realizar substituciones masivas dentro de un INSERT múltiple en SQL.
+
+EL PATRÓN
+
+El patrón es la expresión mediante el cual intentamos hacer match en Regex. Es decir, lo que vamos a buscar.
+
+el match en Regex se produce cuando tras analizar el resultado de un patrón, se pueden encontrar uno o varios 
+casos en los que si que se cumple dicha condición dentro del documento. Por lo tanto, solamente cuando encontramos casos.
+
+Hay que tener activado en el buscador el poder usar expresiones regulares, y el que distinga entre mayusculas y minusculas,
+basicamente en el buscador es el primer botón y el tercero, activamos los dos y ya estaria preparado el buscador para ayudarnos
+a buscar las regex.
+
+Un ejemplo basico seria:
+
+123
+234
+123456
+1234567
+
+Si tu en el buscador pones 234, te marcara de color naranja los caracteres que has buscado en todo el codigo, y te dira
+donde se situan.
+
+LA * DE KLEENE
+
+Tambien conocida como la estrella de Kleene, ya que Kleene, fue el padre de las expresiones regulares, y como homenaje,
+la comunidad asocia la expresión que lo engloba todo, el carácter * a su nombre.
+
+el /* selecciona todos los caracteres (incluido el salto de línea \n)
+
+Un ejemplo seria:
+
+ojo loro rioja hoja
+  
+ 
+En la primera linea vemos que contiene texto además de un salto de línea.
+La segunda línea podemos ver que tiene dos espacios y además también contiene otro salto de línea.
+Y finalmente, la tercera línea contiene un solo espacio, pero al no haber más lineas, no contiene ningún salto de línea.
+
+Entonces para hacer una chuleta vamos a ver que hace cada uno de ellos:
+- /* : Selecciona todos los caracteres.
+- \n : Selecciona todos los saltos de linea.
+- \s : Selecciona todos los espacios.
+- . : Selecciona todos los caracteres menos los saltos de linea, es la diferencia entre /* y .
+- \. : Seleccionamos los .
+- \\ : seleccionamos los \
+- \w : Con w en minusculas seleccionamos cualquier caracter de una palabra que sea un numero o una letra (a excepcion de la ñ).
+Es equivalente a [a-zA-Z0-9].
+- \w|ñ : Si queremos hacer lo mismo pero incluyendo la ñ.
+- \W : Con W en mayusculas, seleccionamos cualquier caracter que no sea una palabra o numero.
+Es equivalente a [^a-zA-Z0-9].
+- \d : Con la d en minusculas, seleccionamos cualquier digito decimal.
+Es equivalente a [0-9].
+- \D : Con la D en mayusculas, seleccionamos cualquier digito que no sea un numero decimal.
+Es equivalente a utilizar [^0-9].
+- \s : Con la s en minuscula, seleccionamos cualquier caracter que sea un espacio.
+- \S : Con la S en mayusculas, seleccionamos cualquier caracter que no sea un espacio.
+- \b : en minuscula, nos permite seleccionar el limite de una palabra, es decir el inicio y el final de dicha palabra.
+
+SELECCIONAR DETERMINADOS CARACTERES
+
+Para empezar, si tu en el buscador ya de por si escribes "o", o "r", ya nos selecciona el caracter escrito,
+pero cuando por ejemplo quieres escoger varios caracteres haremos esto:
+
+- [ro] : Así podremos seleccionar todos los caracter "r" y "o" que hay dentro del documento.
+- [^ro] : Así podremos seleccionar todos los caracteres que NO sean "r" y "o" que hay en el documento.
+- [a-zñ] : Seleccionamos todos los caracteres del documento desde la a hasta la z incluyendo la ñ que sean MINUSCULAS.
+- [A-ZÑ] : Seleccionamos todos los caracteres del documento desde la A hasta la Z incluyendo la Ñ que sean MAYUSCULAS.
+- [a-zñA-ZÑ] : Seleccionamos todos los caracteres del documento desde la a hasta la Z incluyendo la ñ y Ñ tanto MAYUSCULAS Y MINUSCULAS.
+- [0-9] : Seleccionamos todos los caracteres de numero desde el 0 al 9.
+- o.o, .o. , ..o.. : La "o" es un ejemplo, podria ser cualquier caracter o caracteres, pero seleccionaria caracteres que tuvieran una 
+dos "o" y entre medio un caracter mas, basicamente, el punto es lo que significaria un caracter vacio, lo que busca es el caracter 
+que escribes y luego el punto es que no te importa el caracter que tenga en medio o al final o delante.
+SELECCIONARIA LOS CARACTERES QUE HAS ESCRITO Y SEGUN LOS PUNTOS, LOS CARACTERES QUE ESTARIAN DONDE EL PUNTO.
+- m.* : La "m" es un ejemplo, podria ser cualquier caracter, Seleccionariamos todos los caracteres a partir de la m, sirve mucho para
+reemplazar diferentes partes de un documento que necesites cambiar muchos caracteres pero solo a partir de ese caracter en concreto,
+y reemplazarlo por otros caracteres, asi reemplazas el texto a partir de ese caracter por el que necesites poner.
+- Buscar(n)
+- Reemplazar $1ñ : Por ejemplo, si quieres añadir un caracter justo despues de otro, por ejemplo la ñ detras de una n, 
+seleccionariamos la n entre parentesis y luego lo reemplazariamos con $1, significado de que lo queremos un espacio despues y la ñ
+que es el caracter que queremos añadir.
+
+
+IMPORTANTE AÑADIR QUE SI QUIERES SELECCIONAR JUSTAMENTE TODOS LOS CARACTERES QUE NO ESCRIBAS, HACER LO MISMO PERO
+CON ^ DELANTE, POR EJEMPLO:
+
+- [^a-zA-ZñÑ] : Aqui seleccionariamos justamente solo los numeros, no seleccionaria ninguna letra.
+- [^0-9] : Aqui seleccionariamos solo las letras, no seleccionariamos ningun numero.

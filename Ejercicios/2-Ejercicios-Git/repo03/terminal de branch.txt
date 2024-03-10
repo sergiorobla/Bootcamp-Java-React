@@ -1,0 +1,270 @@
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git branch
+* main
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git branch sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git branch
+* main
+  sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git checkout sergio20022024
+Switched to branch 'sergio20022024'
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git branch
+  main
+* sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git add .
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git commit -m "modificacion de rama"
+[sergio20022024 4380115] modificacion de rama
+ 1 file changed, 3 insertions(+)
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push
+fatal: The current branch sergio20022024 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin sergio20022024
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git log --graph --all --decorate
+* commit 438011574e8f2892b6376e19cf2cd4c00cdcf6d9 (HEAD -> sergio20022024)
+| Author: sergiorobla <sergiorobla36@gmail.com>
+| Date:   Tue Feb 20 17:58:54 2024 +0100
+|
+|     modificacion de rama
+|
+* commit 4e91d7d3b72729618dd821a47eae7f46e9d0e51b (origin/main, main)
+  Author: sergiorobla <sergiorobla36@gmail.com>
+  Date:   Tue Feb 20 17:40:48 2024 +0100
+
+      creacion del readme
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git status
+On branch sergio20022024
+nothing to commit, working tree clean
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push origin sergio20022024
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'sergio20022024' on GitHub by visiting:
+remote:      https://github.com/sergiorobla/repo03/pull/new/sergio20022024
+remote:
+To https://github.com/sergiorobla/repo03.git
+ * [new branch]      sergio20022024 -> sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push
+fatal: The current branch sergio20022024 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin sergio20022024
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git log --graph --all --decorate
+* commit 438011574e8f2892b6376e19cf2cd4c00cdcf6d9 (HEAD -> sergio20022024, origin/sergio20022024)
+| Author: sergiorobla <sergiorobla36@gmail.com>
+| Date:   Tue Feb 20 17:58:54 2024 +0100
+|
+|     modificacion de rama
+|
+* commit 4e91d7d3b72729618dd821a47eae7f46e9d0e51b (origin/main, main)
+  Author: sergiorobla <sergiorobla36@gmail.com>
+  Date:   Tue Feb 20 17:40:48 2024 +0100
+
+      creacion del readme
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push -u origin sergio20022024
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'sergio20022024' on GitHub by visiting:
+remote:      https://github.com/sergiorobla/repo03/pull/new/sergio20022024
+remote:
+To https://github.com/sergiorobla/repo03.git
+ * [new branch]      sergio20022024 -> sergio20022024
+branch 'sergio20022024' set up to track 'origin/sergio20022024'.
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push
+Everything up-to-date
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git add .
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git commit -m "Segundo commit"
+[sergio20022024 6792e7e] Segundo commit
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 img/git push -u origin.png
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 30.07 KiB | 15.04 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sergiorobla/repo03.git
+   4380115..6792e7e  sergio20022024 -> sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git add .
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git commit -m "Tercer commit"
+[sergio20022024 38a536a] Tercer commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sergiorobla/repo03.git
+   6792e7e..38a536a  sergio20022024 -> sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git commit -am "Cuarto commit"
+[sergio20022024 22fd8b4] Cuarto commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sergiorobla/repo03.git
+   38a536a..22fd8b4  sergio20022024 -> sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (sergio20022024)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git merge sergio20022024 
+Updating 4e91d7d..22fd8b4
+Fast-forward
+ img/git push -u origin.png | Bin 0 -> 31441 bytes
+ readme.md                  |   9 +++++++++
+ 2 files changed, 9 insertions(+)
+ create mode 100644 img/git push -u origin.png
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git branch -d sergio20022024 
+Deleted branch sergio20022024 (was 22fd8b4).
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git branch
+* main
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git log --graph --all --decorate
+* commit 22fd8b425375194a2c0ac8463123832f5c3e3e69 (HEAD -> main, origin/sergio20022024)
+* commit 22fd8b425375194a2c0ac8463123832f5c3e3e69 (HEAD -> main, origin/sergio20022024)
+| Author: sergiorobla <sergiorobla36@gmail.com>
+| Date:   Tue Feb 20 18:54:10 2024 +0100
+|
+|     Cuarto commit
+|
+* commit 38a536aa7c70eac7275c612ab82d156be71ab347
+| Author: sergiorobla <sergiorobla36@gmail.com>
+| Date:   Tue Feb 20 18:52:20 2024 +0100
+|
+|     Tercer commit
+|
+* commit 6792e7e89748f9f21b0b31199fc8ce839ecadf95
+| Author: sergiorobla <sergiorobla36@gmail.com>
+| Date:   Tue Feb 20 18:51:50 2024 +0100
+|
+|     Segundo commit
+|
+* commit 438011574e8f2892b6376e19cf2cd4c00cdcf6d9
+| Author: sergiorobla <sergiorobla36@gmail.com>
+| Date:   Tue Feb 20 17:58:54 2024 +0100
+|
+|     modificacion de rama
+|
+* commit 4e91d7d3b72729618dd821a47eae7f46e9d0e51b (origin/main)
+  Author: sergiorobla <sergiorobla36@gmail.com>
+  Date:   Tue Feb 20 17:40:48 2024 +0100
+
+      creacion del readme
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git log --oneline --graph --all --decorate
+* 22fd8b4 (HEAD -> main, origin/sergio20022024) Cuarto commit
+* 38a536a Tercer commit
+* 6792e7e Segundo commit
+* 4380115 modificacion de rama
+* 4e91d7d (origin/main) creacion del readme
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sergiorobla/repo03.git
+   4e91d7d..22fd8b4  main -> main
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git log --oneline --graph --all --decorate
+* 22fd8b4 (HEAD -> main, origin/sergio20022024, origin/main) Cuarto commit
+* 38a536a Tercer commit
+* 6792e7e Segundo commit
+* 4380115 modificacion de rama
+* 4e91d7d creacion del readme
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git log --oneline --graph --all --decorate
+* 22fd8b4 (HEAD -> main, origin/sergio20022024, origin/main) Cuarto commit
+* 38a536a Tercer commit
+* 6792e7e Segundo commit
+* 4380115 modificacion de rama
+* 4e91d7d creacion del readme
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git branch
+* main
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$ git push origin --delete sergio20022024
+To https://github.com/sergiorobla/repo03.git
+ - [deleted]         sergio20022024
+
+sergi@DESKTOP-5HB5Q0S MINGW64 ~/Documents/PruebasBootcampJava/git/repo03 (main)
+$

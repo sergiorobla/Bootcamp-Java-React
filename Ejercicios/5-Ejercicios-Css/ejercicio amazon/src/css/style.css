@@ -1,0 +1,710 @@
+@font-face {
+  font-family: "AmazonLighter";
+  src: url(../../assets/fonts/lighter.woff2) format("woff2");
+}
+@font-face {
+  font-family: "AmazonBolder";
+  src: url(../../assets/fonts/bolder.woff2) format("woff2");
+}
+
+/* Generic CSS */
+body {
+  font-family: "AmazonLighter", sans-serif;
+  margin: 0px;
+  user-select: none;
+}
+hr {
+  background-color: transparent;
+  border-top: 1px solid #b3b3b3;
+}
+#hrSeparator {
+  margin: 20px;
+}
+
+/* Style Header */
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #131921;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+
+/* Style Logo*/
+.header-top #logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  padding: 0 30px 0 20px;
+}
+.logoAndLocation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+}
+/* Style Location */
+.location {
+  font-family: "AmazonBolder", sans-serif;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+.location:hover {
+  color: #febd69;
+}
+.location img {
+  position: relative;
+  top: 4px;
+}
+.location span {
+  font-family: "AmazonLighter", sans-serif;
+  font-size: 12px;
+}
+
+/* Style Browser */
+.browser form {
+  display: flex;
+}
+#curriculumList {
+  width: 140px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #e6e6e6;
+  padding-left: 3px;
+  font-size: 11px;
+  color: #525252;
+}
+#curriculumList option {
+  font-size: 14px;
+  background-color: white;
+  color: black;
+}
+.browser input {
+  width: 35vw;
+  padding-left: 10px;
+}
+.browser select,
+.browser input {
+  border: solid 1px #e6e6e6;
+}
+.browser select,
+.browser input,
+.browser button {
+  margin: 0;
+  height: 40px;
+  outline: none;
+}
+.browser button {
+  width: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #febd69;
+  border: solid 1px #febd69;
+  color: white;
+}
+
+/* Style Languages */
+.language {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 10px;
+}
+.language img {
+  width: 26px;
+}
+.language select {
+  font-family: "AmazonBolder", sans-serif;
+  background-color: #131921;
+  color: white;
+  border: none;
+  width: 39px;
+  outline: none;
+}
+.language select:hover {
+  color: #febd69;
+}
+.language select option {
+  font-size: 14px;
+  background-color: white;
+  color: black;
+}
+
+/* Style for buttons */
+.buttonsBrowser {
+  display: flex;
+  padding-right: 30px;
+  flex-wrap: wrap;
+}
+#identificar,
+#pedidos,
+#cesta {
+  color: white;
+  margin-right: 10px;
+}
+#identificar {
+  width: 120px;
+}
+#pedidos {
+  width: 70px;
+}
+#cesta {
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+#cesta:hover,
+#identificar:hover,
+#pedidos:hover {
+  color: #febd69;
+  cursor: pointer;
+}
+#identificar span,
+#pedidos span {
+  font-family: "AmazonLighter", sans-serif;
+  font-size: 12px;
+}
+
+/* Style for Menu */
+.menu {
+  background-color: #232f3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  flex-wrap: wrap;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 18px;
+}
+.menu a:hover {
+  color: #febd69;
+  text-decoration: underline;
+}
+#TrabajoPrime {
+  width: 350px;
+  height: auto;
+}
+
+/* Global Style for presentation */
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#stars {
+  width: 105px;
+  height: 25px;
+}
+
+#starsButton {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.PresentationTop {
+  display: flex;
+}
+/* Style for presentation images */
+.fotos-presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.fotos-presentacion ul li {
+  list-style: none;
+}
+.fotos-presentacion ul img {
+  width: 50px;
+  height: auto;
+}
+#foto-perfil {
+  width: 500px;
+  position: relative;
+  top: 16px;
+  left: 10px;
+}
+
+/* Style for presentation text */
+.presentationText {
+  position: relative;
+  top: 15px;
+  left: 25px;
+}
+.presentationTitle h1 {
+  font-size: 25px;
+}
+.presentationTitle p {
+  position: relative;
+  top: -15px;
+}
+.presentationTitle p span {
+  cursor: pointer;
+  color: #bf6c01;
+  text-decoration: underline;
+}
+.presentationTitle p span:hover {
+  color: #ff9100;
+  text-decoration: none;
+}
+.TextStars {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -35px;
+  left: -10px;
+}
+.TextStars a {
+  color: #bf6c01;
+}
+.TextStars a:hover {
+  color: #ff9100;
+  text-decoration: none;
+}
+.presentationDescription {
+  position: relative;
+  top: -60px;
+}
+.presentationDescription h2 {
+  font-size: 18px;
+  color: #a60000;
+}
+.presentationDescription p {
+  font-size: 15px;
+  position: relative;
+  top: -10px;
+}
+.presentationDescription ul {
+  position: relative;
+  top: -20px;
+  left: -25px;
+  font-size: 15px;
+}
+.presentationDescription ul li {
+  list-style: none;
+}
+#BuyLaterMonth {
+  font-size: 12px;
+  color: #32947e;
+}
+.presentationPrice {
+  width: 500px;
+  position: relative;
+  top: -70px;
+  text-align: justify;
+}
+.presentationPrice p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.presentationPrice div {
+  font-size: 14px;
+  position: relative;
+  top: -15px;
+}
+.presentationPrice div a {
+  color: #0071a5;
+}
+.presentationPrice div a:hover {
+  color: #a60000;
+}
+
+/* Style for Add to Cart */
+.SergioPrime {
+  width: 220px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  margin: 0 50px;
+  border: solid 1px #bababa;
+  border-radius: 5px;
+}
+.SergioPrime form {
+  background-color: #dedede;
+  padding: 10px 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.ComprarYa {
+  width: 220px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  margin: 0 50px;
+  margin-bottom: 30px;
+}
+.ComprarYa h3 {
+  display: inline-block;
+  cursor: pointer;
+}
+.ComprarYa h3:hover {
+  color: #007185;
+  text-decoration: underline 2px;
+}
+.ComprarYa div {
+  border: solid 1px #dedede;
+  padding: 1px 5px;
+  position: relative;
+  top: -10px;
+}
+.ComprarYa button {
+  width: 180px;
+  padding: 7px 0;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  background-color: #f2cd13;
+  border: solid 1px transparent;
+}
+.ComprarYa button:hover {
+  box-shadow: inset 2px -2px 20px #0000005a;
+}
+#buttonComprarYa {
+  background-color: #ffa927;
+}
+#buttonComprarYa:hover {
+  background-color: #ff9900;
+}
+
+/* Style Commonly Purchased */
+.CompradosJuntos {
+  margin: 0 20px;
+}
+.CompradosJuntosContent img {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+.CompradosJuntosContent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#AñadirTotal {
+  text-align: center;
+}
+#AnyadirTotal button {
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: solid 1px transparent;
+  background-color: #f2cd13;
+}
+#AnyadirTotal button:hover {
+  box-shadow: inset 2px -2px 20px #0000005a;
+}
+
+/* Style Product Details */
+.ProductDetails {
+  margin: 0 20px;
+}
+.ProductDetails div {
+  font-size: 15px;
+}
+.ProductDetails div p {
+  margin-bottom: -10px;
+  margin-right: 10px;
+}
+#StarsProductDetails {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#StarsProductDetails img {
+  position: relative;
+  top: 12px;
+}
+#TextOfStars a {
+  color: #bf6c01;
+}
+#TextOfStars a:hover {
+  color: #ff9100;
+  text-decoration: none;
+}
+
+/* Style for Product Description */
+.ProductDescription {
+  margin: 0 20px;
+  text-align: justify;
+}
+/* Style for Professional Experience */
+.ProfessionalExperience {
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -20px;
+}
+#ProfessionalExperienceStar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -30px;
+}
+#ReviewsStars {
+  position: relative;
+  top: -55px;
+  left: 10px;
+}
+#ReviewsStars label a {
+  color: #bf6c01;
+  text-decoration: none;
+}
+#ReviewsStars label a:hover {
+  color: #ff6f00;
+}
+#ReviewsStars form meter {
+  position: relative;
+  top: 7px;
+  margin-left: 2px;
+  width: 100px;
+  height: 30px;
+}
+.CiteProfessionalExperience {
+  position: relative;
+  top: 7px;
+  left: 20px;
+}
+.CiteProfessionalExperience p {
+  font-weight: bold;
+}
+.CiteProfessionalExperience cite {
+  position: relative;
+  top: -15px;
+  font-size: 14px;
+}
+
+/* Most Revelant Professional Experience */
+.MostRevelant {
+  margin: 0 20px;
+}
+.MostRevelant a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "AmazonBolder", sans-serif;
+}
+.MostRevelant a:hover {
+  color: #ff6f00;
+}
+.Company {
+  position: relative;
+  top: -40px;
+  left: 5px;
+}
+.Review {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -10px;
+}
+.Review a {
+  margin: 0 5px;
+}
+.Comments {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -40px;
+  left: 15px;
+}
+.Comments a {
+  color: #a60000;
+  font-size: 14px;
+}
+.Comments div {
+  margin: 0 10px;
+}
+.Comments button {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#CompleteProfessionalExperience {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+  left: 20px;
+  font-family: "AmazonBolder", sans-serif;
+  font-size: 17px;
+}
+#CompleteProfessionalExperience:hover {
+  color: #ff6f00;
+}
+#WriteCustomer {
+  position: relative;
+  left: 30px;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 1px rgb(136, 136, 136);
+  cursor: pointer;
+}
+#WriteCustomer:hover {
+  box-shadow: inset 2px -2px 20px #0000005a;
+}
+
+/* Style for Footer*/
+.TextFooter {
+  color: white;
+  background-color: #232f3e;
+  position: relative;
+  top: -17px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  background-color: #131921;
+}
+footer a {
+  text-decoration: none;
+}
+.Up {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: #37475a;
+  padding: 13px 0px;
+}
+.Up:hover {
+  background-color: #415369;
+}
+.TextFooter ul {
+  text-align: left;
+}
+.TextFooter ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#TitTextFoot {
+  font-size: 17px;
+  font-weight: bold;
+}
+.TextFooter ul li:not(#TitTextFoot):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1465px) {
+  .header-top {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .browser {
+    margin: 15px 0;
+  }
+  .menu {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #TextMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #TextMenu a {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .PresentationTop {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .presentation {
+    justify-content: center;
+  }
+  .PresentationTop {
+    flex-direction: column;
+  }
+  .presentationText {
+    left: 60px;
+  }
+  .presentationPrice {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 831px) {
+  #foto-perfil {
+    width: 325px;
+  }
+  .fotos-presentacion div ul {
+    padding-left: 0px;
+  }
+  .TextFooter {
+    flex-direction: column;
+  }
+  .TextFooter ul {
+    position: relative;
+    left: -20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .presentationText {
+    left: 15px;
+  }
+  .presentationPrice {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 520px) {
+  #foto-perfil {
+    width: 250px;
+  }
+  .fotos-presentacion ul li img {
+    width: 38.7px;
+  }
+  .presentationText h1 {
+    font-size: 22px;
+  }
+  #cesta {
+    width: auto;
+    margin-right: 0px;
+    position: relative;
+    left: -15px;
+  }
+  .buttonsBrowser {
+    flex-direction: column;
+    padding-right: 0px;
+    align-items: center;
+    text-align: center;
+  }
+  .buttonsBrowser div {
+    margin: 10px 0;
+  }
+  #TrabajoPrime {
+    width: 100%;
+  }
+  .Comments div {
+    margin: 0 5px;
+  }
+  .MostRevelant a,
+  .MostRevelant p {
+    font-size: 13px;
+  }
+  .MostRevelant p {
+    position: relative;
+    left: -20px;
+  }
+  .Comments button {
+    margin-right: 5px;
+  }
+  .PresentationTop {
+    position: relative;
+    left: -10px;
+  }
+}

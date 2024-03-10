@@ -1,0 +1,6 @@
+Para cambiar el repositorio remoto a otro:
+$ git remote set-url origin https://github.com/sergiorobla/practicaGit.git
+Para subir una rama al repositorio que no esta en el remoto:
+$ git push -u origin practica1_sergiorobla
+Para juntar una rama con otra:
+$ git merge practica1_sergiorobla

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sergio.es: curriculum profesional</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/amazon-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body id="arriba">
+    <header>
+      <div class="header-top">
+        <div class="logoAndLocation">
+          <a href="./index.html">
+            <img src="./assets/img/logoPage.png" id="logo" alt=""
+          /></a>
+          <div class="location">
+            <img src="./assets/img/icons/location.png" alt="" />
+            <div>
+              <span>Entrega en tu ubicación</span> <br />
+              Actualizar ubicación
+            </div>
+          </div>
+        </div>
+        <div class="browser">
+          <form action="#">
+            <select name="seccionsCurriculum" id="curriculumList">
+              <option value="AllSeccions">Todas las secciones</option>
+              <option value="PersonalInformation">Datos Personales</option>
+              <option value="WorkExperience">Experiencia Laboral</option>
+              <option value="EducationAndFormation">
+                Educación y Formación
+              </option>
+              <option value="SkillsAndCompetencies">
+                Habilidades y Competencias
+              </option>
+              <option value="FulfilledProjects">Proyectos Realizados</option>
+              <option value="Languages">Idiomas</option>
+              <option value="CertificationsAndCourses">
+                Certificaciones y Cursos
+              </option>
+              <option value="References">Referencias</option>
+              <option value="AchievementsAndRecognitions">
+                Logros y Reconocimientos
+              </option>
+              <option value="InterestsAndHobbies">Intereses y Aficiones</option>
+              <option value="VolunteeringAndSocialActivities">
+                Voluntariado y Actividades Sociales
+              </option>
+              <option value="PublicationsAndArticles">
+                Publicaciones y Artículos
+              </option>
+              <option value="ToolsAndTechnologies">
+                Herramientas y Tecnologías
+              </option>
+              <option value="CareerGoals">Objetivos Profesionales</option>
+              <option value="ContactInformation">
+                Información de Contacto
+              </option>
+            </select>
+            <input
+              type="search"
+              id="CurriculumBrowser"
+              placeholder="Buscar en Curriculum"
+            />
+            <button type="submit">
+              <img src="./assets/img/icons/search.png" alt="" />
+            </button>
+          </form>
+        </div>
+        <div class="buttonsBrowser">
+          <div class="language">
+            <img src="./assets/img/icons/spain.png" alt="" />
+            <select name="language" id="lang">
+              <option value="spain">ES - español</option>
+              <option value="portugues">PT - português</option>
+            </select>
+          </div>
+          <div id="identificar">
+            <span>Hola, identifícate</span> <br />
+            Cuenta y listas
+          </div>
+          <div id="pedidos">
+            <span>Devoluciones</span> <br />
+            y Pedidos
+          </div>
+          <div id="cesta">
+            <p
+              style="
+                position: relative;
+                top: -10px;
+                left: 31.5px;
+                color: #f08804;
+                font-weight: bolder;
+              "
+            >
+              0
+            </p>
+            <img src="./assets/img/icons/carro.png" alt="" />
+            Cesta
+          </div>
+        </div>
+      </div>
+      <nav class="menu">
+        <div id="TextMenu">
+          <a href="#">Educación y Formación</a>
+          <a href="#">Habilidades y Competencias</a>
+          <a href="#">Proyectos Realizados</a>
+          <a href="#">Certificaciones y Cursos</a>
+          <a href="#">Herramientas y Tecnologías</a>
+          <a href="#">Información de Contacto</a>
+        </div>
+        <div>
+          <a href="#"
+            ><img src="./assets/img/TrabajosPrime.jpg" id="TrabajoPrime" alt=""
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="presentation">
+        <div class="PresentationTop">
+          <div class="fotos-presentacion">
+            <div>
+              <ul>
+                <li>
+                  <img
+                    src="./assets/img/photos/img4.jpg"
+                    alt=""
+                    onclick="cambiarImagen(this)"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img/photos/img1.jpg"
+                    alt=""
+                    onclick="cambiarImagen(this)"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img/photos/img2.jpg"
+                    alt=""
+                    onclick="cambiarImagen(this)"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img/photos/img3.jpg"
+                    alt=""
+                    onclick="cambiarImagen(this)"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img/photos/img5.jpg"
+                    alt=""
+                    onclick="cambiarImagen(this)"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img/photos/img6.jpg"
+                    alt=""
+                    onclick="cambiarImagen(this)"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img src="./assets/img/photos/img4.jpg" id="foto-perfil" alt="" />
+            </div>
+          </div>
+          <div class="presentationText">
+            <div class="presentationTitle">
+              <h1>Sergio Robla, Developer Full-Stack</h1>
+              <p>by <span>Sergio Robla</span></p>
+            </div>
+            <div class="TextStars">
+              <img src="./assets/img/stars.png" id="stars" alt="" />
+              <img
+                src="./assets/img/buttons/stars-button.jpg.png"
+                id="starsButton"
+                alt=""
+              />
+              <p>(<a href="#">5 reviews</a>) |</p>
+            </div>
+            <div class="presentationDescription">
+              <h2>Currently avaliable.</h2>
+              <p>We don't know if this item will be available for long.</p>
+              <ul>
+                <li>Dual competence: technical-management</li>
+                <li>5+ years working on web products</li>
+                <li>Entrepreneurial mindset</li>
+                <li>Strong Generalist</li>
+                <li>Trilingual ES/IT/CAT</li>
+              </ul>
+              <div id="BuyLaterMonth">
+                <b>+20</b> comprados el mes pasado
+              </div>
+            </div>
+            <div class="presentationPrice">
+              <p>El precio puede variar dependiendo del proyecto.</p>
+              <div>
+                Los precios de los productos vendidos incluyen el IVA.
+                Dependiendo de tu dirección de entrega, el IVA puede variar al
+                finalizar la compra. Para obtener más información, haz clic
+                <a href="#">aqui</a>.
+              </div>
+              <div style="margin-top: 20px">
+                Financiación:
+                <span style="color: #a60000; font-weight: bold"
+                  >a 2, 3, 4, 5 o 6 cuotas</span
+                >
+                en 90 días con <a href="#">Paga en 4 de Cofidis</a> (Total
+                adeudado dependiendo del precio, Coste del crédito 5,36€, TAE
+                23,45%) <br />
+                <a href="#">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="AñadirCesta">
+          <div class="SergioPrime">
+            <form action="#">
+              <input type="checkbox" name="laboroPrime" id="Prime" />
+              <label for="Prime">Sí, quiero Sergio Prime </label>
+            </form>
+            <p style="font-weight: bold; font-size: 14px">
+              Te ofrezco 3 días de prueba de Prime.
+            </p>
+            <img
+              src="./assets/img/sergioPrime.png"
+              style="width: 100px"
+              alt=""
+            />
+          </div>
+          <div class="ComprarYa">
+            <h3>Entrega</h3>
+            <div>
+              <p style="font-weight: bold; font-size: 20px">
+                000 <sup>00 €</sup>
+              </p>
+              <p>
+                Puedes solicitar una fecha de entrega en el momento que
+                contactes o añadas plaza para contacto en la cesta
+              </p>
+              <button>Añadir a la cesta</button> <br />
+              <button id="buttonComprarYa">Comprar ya</button>
+              <a href="#"
+                ><img
+                  src="./assets/img/buttons/linkedin.png"
+                  style="width: 175px"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr id="hrSeparator"/>
+      <div class="CompradosJuntos">
+        <h3>Comprados juntos habitualmente</h3>
+        <div class="CompradosJuntosContent">
+          <img src="./assets/img/photos/img4.jpg" alt="" />
+          <div style="margin-right: 20px; font-size: 25px">+</div>
+          <img src="./assets/img/photos/developer.png" alt="" />
+          <div style="margin-right: 20px; font-size: 25px">+</div>
+          <img src="./assets/img/photos/temas.png" alt="" />
+          <div id="AnyadirTotal">
+            <p>Precio total: 00,00 €</p>
+            <button>Añadir a la cesta</button>
+          </div>
+        </div>
+        <div style="margin-top: 10px">
+          <form action="#">
+            <input type="checkbox" id="Sergio" checked />
+            <label for="Sergio">Developer Full-Stack Sergio Robla</label>
+          </form>
+          <form action="#">
+            <input type="checkbox" id="Desarrollo" checked />
+            <label for="Desarrollo">Desarrollo de pagina Web</label>
+          </form>
+          <form action="#">
+            <input type="checkbox" id="Temas" checked />
+            <label for="Temas">Temas para páginas Web</label>
+          </form>
+        </div>
+      </div>
+      <hr id="hrSeparator" />
+      <div class="ProductDetails">
+        <h3>Product Details</h3>
+        <div>
+          <p><b>Product Dimensions:</b> Height: 183cm</p>
+          <p>
+            <b>Shipping:</b> This item is available for shipping anywhere in the
+            world!
+          </p>
+          <p><b>Languages:</b> Spanish, Catalan, Italian</p>
+          <p><b>Best marathon time:</b> 3hr22min</p>
+          <div id="StarsProductDetails">
+            <p><b>Average Customer Review:</b></p>
+            <img src="./assets/img/stars.png" id="stars" alt="" />
+            <img
+              src="./assets/img/buttons/stars-button.jpg.png"
+              id="starsButton"
+              alt=""
+            />
+            <p id="TextOfStars">(<a href="#">5 reviews</a>) |</p>
+          </div>
+          <div style="display: flex">
+            <div>
+              <p><b>Education:</b></p>
+            </div>
+            <div>
+              <p>MBA at University of Dayton, Dayton, OH, USA</p>
+              <p>Master in Management at Toulouse Business</p>
+              <p>Bachelor in Computer Science at University</p>
+            </div>
+          </div>
+          <div style="display: flex">
+            <div>
+              <p><b>Main Skills Rank:</b></p>
+            </div>
+            <div>
+              <p>
+                <b>Product Management</b> > 2-year startup experience,
+                bootstrapped from scratch to a working product with 1000+ users.
+                Also, dashboards, branding, UI/UX
+              </p>
+              <p>
+                <b>Online Advertising</b> > 2+ years of experience facing media
+                agencies & direct advertisers. Multi-channel campaign
+                optimization
+              </p>
+              <p>
+                <b>Web Marketing</b> > Web Analytics (conversion funnel,
+                metrics), Adwords, E-mailing, A/B testing
+              </p>
+              <p>
+                <b>SEO</b> > Most recent best practices (long-trail,
+                micro-formats), full diagnostics and optimization plans
+              </p>
+              <p>
+                <b>Web Development</b> > HTML5, CSS3, JavaScript, PHP, Python,
+                Django, SQL
+              </p>
+            </div>
+          </div>
+          <div style="margin-top: 20px">
+            Did we miss any relevant features for this product? Check on
+            LinkedIn what we missed.
+          </div>
+        </div>
+      </div>
+      <hr id="hrSeparator" />
+      <div class="ProductDescription">
+        <h3>Product Description</h3>
+        <p>
+          For the past 6 years I've put my energy towards growing and enhancing
+          meaningful web products and services. <br />
+          I then went one step further when I created my own web company 2 years
+          ago. What motivated me was the prospective of applying the different
+          sets of professional & technical skills I had learnt so far to build a
+          meaningful web product. APPARTINFO.com is the first local reviews
+          guide on apartments and neighborhoods in France, and it has been a
+          very rewarding adventure so far. I enjoy traveling and working in
+          multicultural environments, as I have in the past in the US, Mexico
+          and France.
+        </p>
+      </div>
+      <hr id="hrSeparator" />
+      <div class="ProfessionalExperience">
+        <div>
+          <h3>Professional Experience</h3>
+          <div id="ProfessionalExperienceStar">
+            <img
+              src="./assets/img/stars.png"
+              style="width: 100px; height: 25px"
+              alt=""
+            />
+            <p>
+              (<a href="#" style="color: #f08804; text-decoration: none">5</a>)
+            </p>
+          </div>
+          <div style="position: relative; top: -45px; left: 10px">
+            5 out 5 stars
+          </div>
+          <div id="ReviewsStars">
+            <form action="#">
+              <label for="5star"><a href="#">5 star</a></label>
+              <meter id="5star" value="100" min="0" max="100" high="50"></meter>
+              <label for="5star" style="color: #9b9b9b">5</label>
+            </form>
+            <form action="#">
+              <label for="4star"><a href="#">4 star</a></label>
+              <meter id="4star" value="0" min="0" max="100" high="50"></meter>
+            </form>
+            <form action="#">
+              <label for="3star"><a href="#">3 star</a></label>
+              <meter id="3star" value="0" min="0" max="100" high="50"></meter>
+            </form>
+            <form action="#">
+              <label for="2star"><a href="#">2 star</a></label>
+              <meter id="2star" value="0" min="0" max="100" high="50"></meter>
+            </form>
+            <form action="#">
+              <label for="1star"><a href="#">1 star</a></label>
+              <meter id="1star" value="0" min="0" max="100" high="50"></meter>
+            </form>
+          </div>
+        </div>
+        <div class="CiteProfessionalExperience">
+          <p>
+            “ Philippe has always brought great ideas and new perspectives. He
+            was always helpful and participating. He has shown integrity,
+            passion and tenacity ... ”
+          </p>
+          <cite>JL Senent, CEO of Autoreduc</cite>
+          <p>
+            “ His combination of industry knowledge, product management skills
+            and sheer hustling quickly made his startup, AppartInfo, one of the
+            most promising of our class ... ”
+          </p>
+          <cite>M Pannier, Product Manager at Gusto</cite>
+          <p>“ technical knowledge and passion ... ”</p>
+          <cite>D Gormley, Client Executive at The Abreon Group</cite>
+        </div>
+      </div>
+      <div class="MostRevelant">
+        <h3>Most Revelant Professional Experience</h3>
+        <div>
+          <cite>100 of 100 people found the following review helful</cite>
+          <div class="Review">
+            <img
+              src="./assets/img/stars.png"
+              style="width: 100px; height: 25px"
+              alt=""
+            />
+            <a href="#">CEO & Founder, Product Manager</a>
+            <p>Since 2011</p>
+          </div>
+          <p class="Company">At Apple.com, USA</p>
+          <div style="position: relative; top: -50px; left: 10px">
+            APPARTINFO is the first local reviews guide on apartments and
+            neighborhoods in France. Search for a housing and read what the
+            locals are saying about the neighborhood, or the very building you
+            plan on moving to. Think "TripAdvisor for apartments".
+          </div>
+          <div class="Comments">
+            <a href="#">Comments</a>
+            <div>|</div>
+            <div>Was this review helpful to you?</div>
+            <button>Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+      </div>
+      <div class="MostRevelant">
+        <div>
+          <cite>100 of 100 people found the following review helful</cite>
+          <div class="Review">
+            <img
+              src="./assets/img/stars.png"
+              style="width: 100px; height: 25px"
+              alt=""
+            />
+            <a href="#">CEO & Founder, Product Manager</a>
+            <p>Since 2011</p>
+          </div>
+          <p class="Company">At Apple.com, USA</p>
+          <div style="position: relative; top: -50px; left: 10px">
+            APPARTINFO is the first local reviews guide on apartments and
+            neighborhoods in France. Search for a housing and read what the
+            locals are saying about the neighborhood, or the very building you
+            plan on moving to. Think "TripAdvisor for apartments".
+          </div>
+          <div class="Comments">
+            <a href="#">Comments</a>
+            <div>|</div>
+            <div>Was this review helpful to you?</div>
+            <button>Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+      </div>
+      <div class="MostRevelant">
+        <div>
+          <cite>100 of 100 people found the following review helful</cite>
+          <div class="Review">
+            <img
+              src="./assets/img/stars.png"
+              style="width: 100px; height: 25px"
+              alt=""
+            />
+            <a href="#">CEO & Founder, Product Manager</a>
+            <p>Since 2011</p>
+          </div>
+          <p class="Company">At Apple.com, USA</p>
+          <div style="position: relative; top: -50px; left: 10px">
+            APPARTINFO is the first local reviews guide on apartments and
+            neighborhoods in France. Search for a housing and read what the
+            locals are saying about the neighborhood, or the very building you
+            plan on moving to. Think "TripAdvisor for apartments".
+          </div>
+          <div class="Comments">
+            <a href="#">Comments</a>
+            <div>|</div>
+            <div>Was this review helpful to you?</div>
+            <button>Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+      </div>
+      <div class="MostRevelant">
+        <div>
+          <cite>100 of 100 people found the following review helful</cite>
+          <div class="Review">
+            <img
+              src="./assets/img/stars.png"
+              style="width: 100px; height: 25px"
+              alt=""
+            />
+            <a href="#">CEO & Founder, Product Manager</a>
+            <p>Since 2011</p>
+          </div>
+          <p class="Company">At Apple.com, USA</p>
+          <div style="position: relative; top: -50px; left: 10px">
+            APPARTINFO is the first local reviews guide on apartments and
+            neighborhoods in France. Search for a housing and read what the
+            locals are saying about the neighborhood, or the very building you
+            plan on moving to. Think "TripAdvisor for apartments".
+          </div>
+          <div class="Comments">
+            <a href="#">Comments</a>
+            <div>|</div>
+            <div>Was this review helpful to you?</div>
+            <button>Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+      </div>
+      <div class="MostRevelant">
+        <div>
+          <cite>100 of 100 people found the following review helful</cite>
+          <div class="Review">
+            <img
+              src="./assets/img/stars.png"
+              style="width: 100px; height: 25px"
+              alt=""
+            />
+            <a href="#">CEO & Founder, Product Manager</a>
+            <p>Since 2011</p>
+          </div>
+          <p class="Company">At Apple.com, USA</p>
+          <div style="position: relative; top: -50px; left: 10px">
+            APPARTINFO is the first local reviews guide on apartments and
+            neighborhoods in France. Search for a housing and read what the
+            locals are saying about the neighborhood, or the very building you
+            plan on moving to. Think "TripAdvisor for apartments".
+          </div>
+          <div class="Comments">
+            <a href="#">Comments</a>
+            <div>|</div>
+            <div>Was this review helpful to you?</div>
+            <button>Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+      </div>
+      <a href="#" id="CompleteProfessionalExperience"
+        >› See complete professional experience</a
+      ><br />
+      <a href="#"
+        ><button id="WriteCustomer">Write a customer review</button></a
+      >
+    </main>
+    <footer>
+      <a href="#arriba"><p class="Up">Volver arriba</p></a>
+      <div class="TextFooter">
+        <ul>
+          <li id="TitTextFoot">Conócenos</li>
+          <li>Trabajar en Amazon</li>
+          <li>Sobre Amazon.es</li>
+          <li>Sostenibilidad</li>
+          <li>Amazon Science</li>
+        </ul>
+        <ul>
+          <li id="TitTextFoot">Conócenos</li>
+          <li>Trabajar en Amazon</li>
+          <li>Sobre Amazon.es</li>
+          <li>Sostenibilidad</li>
+          <li>Amazon Science</li>
+        </ul>
+        <ul>
+          <li id="TitTextFoot">Conócenos</li>
+          <li>Trabajar en Amazon</li>
+          <li>Sobre Amazon.es</li>
+          <li>Sostenibilidad</li>
+          <li>Amazon Science</li>
+        </ul>
+        <ul>
+          <li id="TitTextFoot">Conócenos</li>
+          <li>Trabajar en Amazon</li>
+          <li>Sobre Amazon.es</li>
+          <li>Sostenibilidad</li>
+          <li>Amazon Science</li>
+        </ul>
+      </div>
+      <div style="text-align: center; padding: 20px 0">
+        <a href="./index.html"
+          ><img src="./assets/img/logoPage.png" style="width: 100px" alt=""
+        /></a>
+      </div>
+    </footer>
+    <script>
+      function cambiarImagen(imagen) {
+        let fotoPerfil = document.getElementById("foto-perfil");
+        fotoPerfil.src = imagen.src;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.inputclass:in-range{
+    background-color: greenyellow;
+    color: green;
+    border: solid 2px green;
+    ;
+}
+
+.inputclass:out-of-range{
+    background-color:crimson;
+    color: darkred;
+    border: solid 2px darkred;
+}

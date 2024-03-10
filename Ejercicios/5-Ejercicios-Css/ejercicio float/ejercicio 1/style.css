@@ -1,0 +1,12 @@
+.guernica img{
+    float:inline-end;
+    width: 50%;
+    height: auto;
+}
+
+.text{
+    width: 50%;
+    float: inline-start;
+    overflow: auto;
+    height: 150px;
+}

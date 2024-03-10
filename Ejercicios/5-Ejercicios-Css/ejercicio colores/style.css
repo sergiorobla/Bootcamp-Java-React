@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.primarios,
+.rgb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.primarios div,
+.rgb div {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.rgb div {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.rgb div {
+  mix-blend-mode: screen;
+}
+
+.rgb-1 {
+  left: 150px;
+}
+
+.rgb-2 {
+  top: 100px;
+}
+
+.rgb-3 {
+  right: 150px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.title-rgb {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.rgb {
+  margin-bottom: 150px;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+}
+
+.green {
+  background-color: rgb(0, 255, 0);
+}
+
+.blue {
+  background-color: rgb(0, 0, 255);
+}
+
+.yellow {
+  background-color: rgb(255, 255, 0);
+}
+
+.magenta {
+  background-color: rgb(255, 0, 255);
+}
+
+.aqua {
+  background-color: rgb(0, 255, 255);
+}

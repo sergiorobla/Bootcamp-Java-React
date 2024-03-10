@@ -1,0 +1,109 @@
+/* ESTILOS GLOBALES */
+body {
+  margin: 20px;
+}
+
+/* ESTILOS PARA EL HEADER */
+header {
+  display: flex;
+  gap: 20px;
+}
+
+header div {
+  width: 100%;
+  height: 150px;
+  background-color: #fea432;
+  margin-bottom: 20px;
+}
+
+/* ESTILOS PARA EL MAIN */
+main div {
+  width: 100%;
+}
+
+.first {
+  background-color: #dbec00;
+  margin-bottom: 20px;
+  height: 500px;
+}
+
+.second {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.second div {
+  height: 450px;
+  background-color: #4a89d0;
+  margin-bottom: 20px;
+}
+
+/* ESTILOS PARA EL FOOTER */
+footer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+footer div {
+  width: 100%;
+  height: 250px;
+  background-color: #e3e3e3;
+}
+
+/* ESTILOS RESPONSIVE PARA TABLET */
+@media screen and (max-width: 768px) {
+  /* ESTILOS PARA EL HEADER */
+  header {
+    display: block;
+  }
+
+  header div {
+    height: 90px;
+  }
+
+  /* ESTILOS PARA EL MAIN */
+  .first {
+    height: 180px;
+  }
+
+  .second {
+    display: block;
+  }
+
+  .second div {
+    height: 90px;
+  }
+
+  /* ESTILOS PARA EL FOOTER */
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer div {
+    height: 90px;
+    flex-basis: 40%;
+  }
+}
+
+/* ESTILOS RESPONSIVE PARA MOVILES */
+@media screen and (max-width: 320px) {
+  /* ESTILOS PARA EL MAIN */
+  .first {
+    height: 90px;
+  }
+
+  .second div {
+    height: 160px;
+  }
+
+  /* ESTILOS PARA EL FOOTER */
+  footer {
+    display: block;
+  }
+
+  footer div:nth-child(n + 2) {
+    display: none;
+  }
+}

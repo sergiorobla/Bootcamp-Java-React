@@ -1,0 +1,25 @@
+body {
+  background-color: beige;
+}
+.global {
+  margin-top: 100px;
+}
+
+.box {
+  font-size: 25px;
+  background-color: white;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 1px black;
+}
+
+.box-1 {
+  text-align: left;
+}
+
+.box-3 {
+  text-align: right;
+}
