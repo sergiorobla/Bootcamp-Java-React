@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #ede7f6;
+}
+header {
+  text-align: center;
+}
+header a {
+  display: inline-block;
+  color: #311b92;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+.reiniciar button {
+  cursor: pointer;
+  padding: 10px 20px;
+  color: black;
+  background-color: #b39ddb;
+  border-radius: 7px;
+  border: solid 2px #311b92;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.reiniciar button:hover {
+  background-color: #311b92;
+  color: white;
+  border: solid 2px black;
+}
+.frase {
+  font-weight: bold;
+  font-size: 16px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  display: flex;
+  gap: 30px;
+}
+form button {
+  font-size: 45px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  justify-content: space-between;
+  border: solid 5px #311b92;
+  border-radius: 100%;
+  background-color: #b39ddb;
+}
+form button:hover {
+  background-color: #9e7ddc;
+}
+.piedra {
+  padding: 10px 25px 25px 25px;
+}
+.papel {
+  padding: 10px 20px 20px 25px;
+}
+.tijera {
+  padding: 10px 30px 15px 25px;
+}
+#resultados {
+  margin-top: 20px;
+}
+.resultadoMaquina {
+  text-align: center;
+  font-size: 45px;
+}
+.resultadoFinal {
+  border: solid 3px #311b92;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  background-color: #b39ddb;
+  border-radius: 7px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contadorResul {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (width < 400px) {
+  form button {
+    font-size: 20px;
+  }
+  .piedra {
+    padding: 20px;
+  }
+  .papel {
+    padding: 20px;
+  }
+  .tijera {
+    padding: 20px;
+  }
+}

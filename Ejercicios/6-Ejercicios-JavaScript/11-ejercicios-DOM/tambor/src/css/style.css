@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "hindu";
+  src: url("../font/SAMAN.TTF") format("truetype");
+}
+
+body {
+  margin: 0;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: yellow;
+  position: absolute;
+  left: 40%;
+  font-family: "hindu", sans-serif;
+}
+.tambor {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tambor button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 40px;
+  border: none;
+  color: yellow;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+.tambor button img {
+  border: solid 2px white;
+  width: 100px;
+  height: auto;
+}
