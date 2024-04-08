@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/* Global Styles */
+.body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Container Styles*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px;
+}
+
+/* Login Styles */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1.5px #dbdbdb;
+  padding: 0 30px;
+  padding-bottom: 10px;
+}
+
+#logo-page {
+  width: 180px;
+  padding: 40px 0;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs Style */
+#username,
+#password {
+  border: solid 1.5px #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  width: 275px;
+  height: 38px;
+  margin-bottom: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#username:focus,
+#password:focus {
+  border: 1px solid #a1a1a1;
+  border-radius: 3px;
+}
+
+#username::-moz-placeholder, #password::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 0.2px;
+}
+
+#username::placeholder,
+#password::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 0.2px;
+}
+
+#button-entrar {
+  border: none;
+  height: 35px;
+  border-radius: 8px;
+  color: white;
+  background-color: #4cb5f9;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin-top: 10px;
+}
+
+/* Facebook Styles */
+.separador {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.barra {
+  width: 110px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.barra2 {
+  width: 110px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.o {
+  margin: 0 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.facebook {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  font-weight: 600;
+  color: #385185;
+  display: flex;
+  align-items: center;
+}
+
+.facebook img {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+/* Has olvidado contraseña Styles */
+.olvidadoContra {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.8px;
+  color: #385185;
+  font-weight: 450;
+}
+
+/* Denuncia de insta */
+.denuncia {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  font-weight: 450;
+  color: #737373;
+}
+
+.denuncia span {
+  color: #385185;
+}
+
+/* Registrarse Styles */
+.registrarse {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+  margin-top: 10px;
+  border: solid 1.5px #dbdbdb;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.registrarse span {
+  font-weight: 600;
+  color: #4cb5f9;
+}
+
+/* Download Styles */
+.descargar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+}
+
+.descargar-img img {
+  width: 100px;
+}
+
+.descargar-img .play {
+  width: 145px;
+}
+
+.descargar-img .microsoft {
+  width: 120px;
+}
+
+/* Footer Styles */
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+  margin-top: 60px;
+  color: #737373;
+  margin-bottom: 60px;
+}
+
+.primera-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.segunda-fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.segunda-fila select {
+  border: none;
+  color: #737373;
+  background-color: transparent;
+  outline: none;
+}
+
+@media (width < 870px) {
+  .home-phone {
+    display: none;
+  }
+}
+@media (width < 426px) {
+  .login {
+    border: none;
+  }
+  .registrarse {
+    border: none;
+  }
+}/*# sourceMappingURL=style.css.map */

